@@ -1,0 +1,25 @@
+#importing modules
+import pandas as pd
+from matplotlib import pyploas as plt
+
+# read csv file
+sample_data = pd.read_csv('sample_data.csv')
+type(sample_data)
+type(sample_data.column_c)
+
+#retrieve a particular data value
+sample_data.column_c.iloc[1]
+
+# plot graph
+plt.plot(sample_data.column_a,sample_data.column_b,'o')
+plt.plot(sample_data.column_a,sample_data.column_c)
+plt.show()
+
+
+# CSV file sample
+column_a,column_b,column_c
+1,1,10
+2,4,8
+3,9,6
+4,16,4
+5,25,2
